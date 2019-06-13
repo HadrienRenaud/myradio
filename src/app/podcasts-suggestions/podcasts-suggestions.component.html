@@ -1,0 +1,14 @@
+<h2>Suggestions :</h2>
+
+<li>
+    <ul *ngFor="let podcast of podcasts" style="align-content: space-between">
+        <span>
+      <strong>{{ podcast.title }}</strong> by <em>{{ podcast.author }}</em>
+    </span>
+        <span>
+      <a [routerLink]="[podcast.src]" routerLinkActive="router-link-active">
+        Get it.
+      </a>
+    </span>
+    </ul>
+</li>
