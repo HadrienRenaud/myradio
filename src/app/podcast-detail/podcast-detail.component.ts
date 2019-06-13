@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-podcast-detail',
@@ -7,13 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PodcastDetailComponent implements OnInit {
 
-  podcast = {
-    title: "This is a podcast.",
-    author: "Me",
-    src: "https://sipios.com/team"
-  };
+  podcastId;
+  podcast;
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private httpClient: HttpClient,
+  ) {
+    this.route.paramMap.subscribe(params => {
+      this.podcastId = params.get('podcastId');
+      this.httpClient.get('http://localhost:8000/api/podcasts/' + this.podcastId)
+      .subscribe(data => this.podcast = data);
+    })
+  }
 
   ngOnInit() {
   }
