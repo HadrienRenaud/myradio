@@ -1,3 +1,9 @@
-<p>
-  podcast-detail works!
+<h3>{{ podcast.title }}</h3>
+
+<p>by
+    <em>{{ podcast.author }}</em>
 </p>
+
+<a [href]="podcast.src">
+    <button>Download</button>
+</a>

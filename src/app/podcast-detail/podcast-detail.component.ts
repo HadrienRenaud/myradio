@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PodcastDetailComponent implements OnInit {
 
+  podcast = {
+    title: "This is a podcast.",
+    author: "Me",
+    src: "https://sipios.com/team"
+  };
+
   constructor() { }
 
   ngOnInit() {
