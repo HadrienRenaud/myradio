@@ -1,0 +1,15 @@
+<div style="width: 1024px; margin: auto; padding-left: 48px; padding-right: 48px">
+    <mat-toolbar color="primary" style="height: 10vh; border-radius:10px 10px 0 0">
+        <mat-list>
+            <mat-list-item style="display: inline-block; height: auto; width: auto">
+                Lecture en cours :
+            </mat-list-item>
+            <mat-list-item style="display: inline-block;">
+                <a mat-button [routerLink]="['/podcast/' + 1]" routerLinkActive="router-link-active">
+                    <strong>Title</strong> by <em>Author</em>
+                </a>
+            </mat-list-item>
+
+        </mat-list>
+    </mat-toolbar>
+</div>

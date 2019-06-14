@@ -14,6 +14,7 @@ import { PodcastsSuggestionsComponent } from './podcasts-suggestions/podcasts-su
 import { PodcastDetailComponent } from './podcast-detail/podcast-detail.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MyNavBarComponent } from './my-nav-bar/my-nav-bar.component';
+import { MyFooterComponent } from './my-footer/my-footer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MyNavBarComponent } from './my-nav-bar/my-nav-bar.component';
     PodcastDetailComponent,
     WelcomeComponent,
     MyNavBarComponent,
+    MyFooterComponent,
   ],
   imports: [
     BrowserModule,
