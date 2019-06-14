@@ -13,6 +13,6 @@ export class PodcastsService {
   }
 
   getPodcasts() {
-    return this.httpClient.get(environment.apiUrl + '/api/podcasts');
+    return this.httpClient.get(environment.apiUrl + '/podcasts');
   }
 }

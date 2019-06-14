@@ -1,0 +1,27 @@
+<header>
+    <mat-toolbar color="primary">
+        <span>
+      <a mat-button [routerLink]="['/']" routerLinkActive="router-link-active">
+        <h3>
+          MyRadio
+        </h3>
+      </a>
+    </span>
+    </mat-toolbar>
+
+    <div style="text-align: center">
+        <div>
+            <h1>
+                MyRadio
+            </h1>
+            <p>
+                Here you can hear and download podcasts
+            </p>
+        </div>
+    </div>
+</header>
+
+<body>
+    <app-podcasts-suggestions>
+    </app-podcasts-suggestions>
+</body>

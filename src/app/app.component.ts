@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { PodcastsService } from './podcasts.service'
 
 @Component({
   selector: 'app-root',
@@ -7,7 +6,7 @@ import { PodcastsService } from './podcasts.service'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'myradio';
+  title = 'MyRadio';
 
   constructor () { }
 }
