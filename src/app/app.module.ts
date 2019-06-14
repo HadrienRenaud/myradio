@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 import { PodcastsSuggestionsComponent } from './podcasts-suggestions/podcasts-suggestions.component';
 import { PodcastDetailComponent } from './podcast-detail/podcast-detail.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { MyNavBarComponent } from './my-nav-bar/my-nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     PodcastsSuggestionsComponent,
     PodcastDetailComponent,
     WelcomeComponent,
+    MyNavBarComponent,
   ],
   imports: [
     BrowserModule,
