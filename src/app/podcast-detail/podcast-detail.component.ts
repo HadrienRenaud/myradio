@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment';
 export class PodcastDetailComponent implements OnInit {
 
   podcastId;
-  podcast = {};
+  podcast: any;
 
   constructor(
     private route: ActivatedRoute,
