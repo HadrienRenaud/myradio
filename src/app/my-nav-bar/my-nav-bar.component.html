@@ -1,9 +1,16 @@
 <mat-toolbar color="primary">
-    <mat-nav-list style="width: 1024px; margin: auto">
-        <a mat-list-item [routerLink]="['/']" routerLinkActive="router-link-active" style="display: inline-block; height: auto; width: auto">
-            <h3>
-                MyRadio
-            </h3>
-        </a>
+    <mat-nav-list style="width: 1024px; margin: auto; display: inline-flex; justify-content: space-between">
+        <span>
+            <a mat-list-item [routerLink]="['/']" routerLinkActive="router-link-active">
+                <h2>
+                    MyRadio
+                </h2>
+            </a>
+        </span>
+        <span>
+            <a mat-list-item>
+                Écouter le direct
+            </a>
+        </span>
     </mat-nav-list>
 </mat-toolbar>
