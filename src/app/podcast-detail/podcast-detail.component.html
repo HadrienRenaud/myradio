@@ -21,7 +21,5 @@
         <em>{{ podcast.author }}</em>
     </p>
 
-    <a [href]="podcast.src">
-        <button>Download</button>
-    </a>
+    <a mat-raised-button color="primary" [href]="'http://' + podcast.src">Download</a>
 </body>
