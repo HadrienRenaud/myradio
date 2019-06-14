@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-podcast-detail',
@@ -18,7 +19,7 @@ export class PodcastDetailComponent implements OnInit {
   ) {
     this.route.paramMap.subscribe(params => {
       this.podcastId = params.get('podcastId');
-      this.httpClient.get('http://localhost:8000/api/podcasts/' + this.podcastId)
+      this.httpClient.get(environment.apiUrl + '/podcasts/' + this.podcastId)
       .subscribe(data => this.podcast = data);
     })
   }
