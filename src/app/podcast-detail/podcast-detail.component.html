@@ -1,18 +1,20 @@
 <header>
     <mat-toolbar color="primary">
-        <span>
+        <div style="width: 1024px; margin: auto">
+            <span>
               <a mat-button [routerLink]="['/']" routerLinkActive="router-link-active">
                 <h3>
                   MyRadio
                 </h3>
               </a>
             </span>
+        </div>
     </mat-toolbar>
 
 
 </header>
 
-<body>
+<body style="max-width: 1024px; margin: auto">
     <h3>{{ podcast.title }}</h3>
 
     <p>by
